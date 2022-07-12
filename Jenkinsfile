@@ -34,7 +34,6 @@ pipeline {
                 // cleanWs()
                 echo "for not showing it error "
                 
-                sleep 30
             }
         }
 }
