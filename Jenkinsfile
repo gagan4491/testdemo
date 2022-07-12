@@ -37,7 +37,7 @@ pipeline {
             }
         }
 
-        stage{
+        stage("doing docker stuff "){
             steps{
                 sh "docker --version"
                 sh "docker images"
