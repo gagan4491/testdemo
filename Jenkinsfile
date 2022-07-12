@@ -3,13 +3,13 @@ pipeline {
     stages {
         stage('Hello Nashville') { 
             steps {
-                echo "Today is sunny in Nashville"
+                echo "Today is sunny in Nashville from dev "
                 // 
             }
         }
         stage('AquaFina') { 
             steps {
-                echo "water"
+                echo " from dev "
                 // 
             }
         }
@@ -20,12 +20,7 @@ pipeline {
                 // 
             }
         }
-         stage('2cloning from git') { 
-            steps {
-                sh "git clone https://github.com/gagan4491/CI_CD.git"
-        
-    }
-    }
+
         stage("display all the files") {
             steps {
                 
