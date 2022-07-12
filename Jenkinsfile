@@ -36,6 +36,20 @@ pipeline {
                 
             }
         }
+
+        stage{
+            steps{
+                sh "docker --version"
+                sh "docker images"
+                sh """
+                    docker --version
+                    docker images
+                    docker ps
+                    ls -la
+                   """
+
+            }
+        }
 }
  post {
     always {
